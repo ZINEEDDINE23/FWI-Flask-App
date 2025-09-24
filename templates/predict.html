@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FWI Prediction Form</title>
+</head>
+<body>
+    <h1>Enter Features for Fire Weather Index Prediction</h1>
+
+    <form action="/prediction" method="post">
+        <label>Temperature:</label>
+        <input type="text" name="Temperature" required><br><br>
+
+        <label>Relative Humidity (RH):</label>
+        <input type="text" name="RH" required><br><br>
+
+        <label>Wind Speed (Ws):</label>
+        <input type="text" name="Ws" required><br><br>
+
+        <label>Rain:</label>
+        <input type="text" name="Rain" required><br><br>
+
+        <label>FFMC:</label>
+        <input type="text" name="FFMC" required><br><br>
+
+        <label>DMC:</label>
+        <input type="text" name="DMC" required><br><br>
+
+        <label>ISI:</label>
+        <input type="text" name="ISI" required><br><br>
+
+        <label>Classes (0 = not fire, 1 = fire):</label>
+        <input type="text" name="Classes" required><br><br>
+
+        <label>Region (0 or 1):</label>
+        <input type="text" name="Region" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

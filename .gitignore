@@ -1,0 +1,15 @@
+# Ignore virtual environments
+.flaskVen/
+venv/
+env/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore system files
+.DS_Store
+
+# Ignore notebooks (optional, if you don’t want to push them)
+notebooks/

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FWI Prediction Result</title>
+</head>
+<body>
+    <h1>Fire Weather Index Prediction Result</h1>
+
+    {% if prediction_text %}
+        <h2 style="color: green;">{{ prediction_text }}</h2>
+    {% else %}
+        <p>No prediction yet. Go to <a href="/prediction">Prediction Page</a> to enter features.</p>
+    {% endif %}
+</body>
+</html>
